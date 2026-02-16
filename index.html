@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends Tournament App</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <style>
         :root {
             --primary: #00e5ff;
@@ -14,6 +12,7 @@
             --bg: #050505;
             --card: #121212;
             --yt-red: #FF0000;
+            --download-blue: #007bff; /* Download button color */
         }
 
         body {
@@ -103,7 +102,14 @@
             border: 1px solid rgba(255,255,255,0.1);
         }
 
-        /* Watch Video Button - Special Style */
+        /* Button Colors */
+        .download-btn {
+            background: linear-gradient(45deg, #007bff, #00c6ff);
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+            border: none;
+        }
+
         .video-btn {
             background: var(--yt-red);
             color: white;
@@ -152,44 +158,49 @@
 </head>
 <body>
 
-    <header>
-        <h1>FRIENDS TOURNAMENT</h1>
-        <p>আপনার গেমিং ক্যারিয়ার শুরু হোক আমাদের সাথে!</p>
-    </header>
+<header>
+    <h1>FRIENDS TOURNAMENT</h1>
+    <p>আপনার গেমিং ক্যারিয়ার শুরু হোক আমাদের সাথে!</p>
+</header>
 
-    <div class="slider-box">
-        <div class="slider">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbBMaWxeTS66AZuB7kHqsWHG_2WF0Mg3FrpUsPmDEVpQ&s=10" alt="Slider 1">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbBMaWxeTS66AZuB7kHqsWHG_2WF0Mg3FrpUsPmDEVpQ&s=10" alt="Slider 2">
-            <img src="https://i.ytimg.com/vi/sYXDV7aWdp0/maxresdefault.jpg" alt="Slider 3">
-        </div>
+<div class="slider-box">
+    <div class="slider">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbBMaWxeTS66AZuB7kHqsWHG_2WF0Mg3FrpUsPmDEVpQ&s=10" alt="Slider 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbBMaWxeTS66AZuB7kHqsWHG_2WF0Mg3FrpUsPmDEVpQ&s=10" alt="Slider 2">
+        <img src="https://i.ytimg.com/vi/sYXDV7aWdp0/maxresdefault.jpg" alt="Slider 3">
     </div>
+</div>
 
-    <div class="container">
-        <h3 style="margin-bottom: 20px; color: #eee;">দ্রুত জয়েন করতে নিচের বাটনগুলো ব্যবহার করুন</h3>
+<div class="container">
+    <h3 style="margin-bottom: 20px; color: #eee;">দ্রুত জয়েন করতে নিচের বাটনগুলো ব্যবহার করুন</h3>
+    <div class="btn-list">
         
-        <div class="btn-list">
-            <a href="https://youtu.be/Ac7bvR6_b3k?si=iKqEqMf2SX2NThOD" target="_blank" class="btn video-btn">
-                <i class="fab fa-youtube"></i> Watch Video
-            </a>
+        <a href="https://github.com/Hacker999G/Friends-tournament-/releases/download/v1.0/FRIENDS.TOURNAMENT.apk" class="btn download-btn">
+            <i class="fas fa-download"></i> Download Official App
+        </a>
 
-            <a href="https://chat.whatsapp.com/CeaE3QkYQyHEJWEISsqj4V?mode=gi_t" target="_blank" class="btn whatsapp-btn">
-                <i class="fab fa-whatsapp"></i> Join WhatsApp Group
-            </a>
+        <a href="https://youtu.be/Ac7bvR6_b3k?si=iKqEqMf2SX2NThOD" target="_blank" class="btn video-btn">
+            <i class="fab fa-youtube"></i> Watch Video
+        </a>
 
-            <a href="https://wa.me/8801959717502" target="_blank" class="btn admin-btn">
-                <i class="fas fa-headset"></i> Contact Admin (Direct)
-            </a>
+        <a href="https://chat.whatsapp.com/CeaE3QkYQyHEJWEISsqj4V?mode=gi_t" target="_blank" class="btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Join WhatsApp Group
+        </a>
 
-            <a href="https://Friends-tournament.space" target="_blank" class="btn web-btn">
-                <i class="fas fa-globe"></i> Visit Official Website
-            </a>
-        </div>
+        <a href="https://wa.me/8801959717502" target="_blank" class="btn admin-btn">
+            <i class="fas fa-headset"></i> Contact Admin (Direct)
+        </a>
+
+        <a href="https://Friends-tournament.space" target="_blank" class="btn web-btn">
+            <i class="fas fa-globe"></i> Visit Official Website
+        </a>
+        
     </div>
+</div>
 
-    <footer>
-        &copy; 2024 Friends Tournament | All Rights Reserved.
-    </footer>
+<footer>
+    &copy; 2024 Friends Tournament | All Rights Reserved.
+</footer>
 
 </body>
 </html>
